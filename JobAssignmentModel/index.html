@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment Problem Solver</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Assignment Problem Solver</h1>
+    <form id="matrix-form">
+      <label for="workers">Number of Workers:</label>
+      <input type="number" id="workers" min="1" required>
+
+      <label for="jobs">Number of Jobs:</label>
+      <input type="number" id="jobs" min="1" required>
+
+      <button type="button" onclick="generateMatrix()">Generate Matrix</button>
+      <div id="matrix-inputs"></div>
+      <button type="submit">Solve</button>
+    </form>
+
+    <pre id="result"></pre>
+    <div id="conclusion" style="display:none;">This result shows the optimal way to assign workers to jobs while minimizing the total cost. It is a practical use of optimization techniques to improve efficiency and resource use.</div>
+    <div id="download-btns">
+      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="downloadCSV()">Download CSV</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
