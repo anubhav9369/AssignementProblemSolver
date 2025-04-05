@@ -1,78 +1,43 @@
-💼 Job Assignment Optimization System
-A web-based application that solves the Assignment Problem using optimization techniques. The goal is to assign jobs to workers in a way that minimizes the total cost.
+# 💼 Job Assignment Optimization System
 
-Built using HTML, CSS, JavaScript and deployed using Netlify.
+This is a web-based system to solve the **Assignment Problem** using optimization techniques. The goal is to assign jobs to workers in a way that the total cost is minimized — a key principle in operational research and optimization.
 
-📌 Features
-🧮 Accepts dynamic cost matrix input
+It is implemented in **HTML, CSS, and JavaScript**, and deployed using **Netlify** to make it accessible and useful for everyone.
 
-➕ Handles unbalanced matrices by auto-padding with dummy workers/jobs
+---
 
-📊 Calculates optimal assignment with minimum total cost
+## 📌 Features
 
-📄 Allows export of result as PDF and CSV
+- ✅ Accepts dynamic user input for cost matrices
+- ✅ Automatically handles **unbalanced matrices** by adding dummy rows/columns
+- ✅ Calculates **optimal job assignment** with total minimum cost
+- ✅ Displays a **simple, user-friendly UI**
+- ✅ Allows **PDF and CSV** download of results
+- ✅ Shows a short **conclusion about optimization benefit**
+- ✅ 100% frontend-only — works right in the browser!
 
-🌐 Accessible on the web via Netlify
 
-📸 Demo
-🔗 Live Website
-🎥 (Insert GIF or screenshot of your frontend UI here)
+## 🔧 Tools and Technologies Used
 
-🚀 Getting Started
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/job-assignment-optimizer.git
-cd job-assignment-optimizer
-2. Open the index.html file in your browser
-No installation required! It's a pure frontend project using vanilla JS.
+- **HTML** – for structure and layout  
+- **CSS** – for styling and responsiveness  
+- **JavaScript** – for assignment logic and matrix operations  
+- **jsPDF** – to generate and download PDF reports  
+- **Blob API** – for creating downloadable CSV files  
+- **Netlify** – for deployment and sharing
 
-🧠 How It Works
-Enter number of workers and jobs.
+---
 
-Fill in the cost matrix (cost of assigning each worker to a job).
+## 🌐 Live Website
 
-Click Solve – the algorithm assigns jobs optimally (diagonal-based placeholder, future upgrade to Hungarian).
+🔗 [[Click here to visit the deployed version](https://67f118ee317a98c4d2ead007--assignmentproblemsolver.netlify.app/)]
 
-View results and download as PDF or CSV.
 
-🧰 Tools & Technologies Used
-HTML – Structure and Forms
+## 📂 Folder Structure
 
-CSS – Layout & Styling
-
-JavaScript – Matrix Logic & Result Calculation
-
-jsPDF – PDF generation
-
-Blob API – CSV export
-
-Netlify – Hosting and Deployment
-
-📁 Project Structure
-bash
-Copy
-Edit
+```bash
 .
-├── index.html         # Main UI
-├── style.css          # Custom styling
-├── script.js          # Core assignment logic
-├── README.md          # GitHub documentation
-📄 Sample Output
-🖼️ (Add screenshots of downloaded PDF and CSV here)
-
-📦 Future Scope
-Replace placeholder logic with Hungarian Algorithm in JS
-
-Add login and multi-user history
-
-Save reports online with charts
-
-Add skill-based job matching AI
-
-🙌 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-📜 License
-MIT License © 2025 Anubhav Verma
+├── index.html         # Webpage structure
+├── style.css          # Styling for layout and elements
+├── script.js          # All logical operations and event handling
+├── README.md          # This documentation
